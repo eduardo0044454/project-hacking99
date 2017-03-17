@@ -58,13 +58,13 @@ public class PlayerMovement : MonoBehaviour
         //Player Shot
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        //Camera Limit
-        if (other.gameObject.tag == "CameraCollider")
-        {
-            CameraCollider.GetComponent<CameraScript>().followPlayer = true;
-        }
-        //Camera Limit
-    }
+//    void OnTriggerEnter2D(Collider2D other)
+//    {
+//        //Camera Limit
+//        if (other.gameObject.tag == "CameraCollider")
+//        {
+//            CameraCollider.GetComponent<CameraScript>().followPlayer = true;
+//        }
+//        //Camera Limit
+//    }
 }
