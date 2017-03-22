@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Set",
+				"SetActive"
+			],
+			[
+				"fal",
+				"false"
+			],
+			[
 				"ca",
 				"canvasScreen"
 			]
@@ -15,7 +23,7 @@
 			"file": "Assets/Scripts/menu.cs",
 			"settings":
 			{
-				"buffer_size": 5582,
+				"buffer_size": 5403,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
 			}
@@ -70,6 +78,10 @@
 	],
 	"file_history":
 	[
+		"/C/Users/waste/Documents/Jogo-de-1-Semana/Jogo de 1 Semana/Assets/Scripts/menu.cs",
+		"/C/Users/waste/Desktop/Project Hacking 99%/Assets/Scripts/menu.cs",
+		"/C/Users/waste/Documents/Jogo-de-1-Semana/Jogo de 1 Semana/Assets/Scripts/buttonAlpha.cs",
+		"/C/Users/waste/Documents/project-hacking99/Project Hacking 99%/Assets/Scripts/menu.cs",
 		"/C/Users/waste/Documents/project-hacking99/Project Hacking 99%/Project Hacking 99%.sublime-project",
 		"/C/Users/waste/Documents/Jogo-de-1-Semana/Jogo de 1 Semana/Assets/Scripts/platformSpawn.cs",
 		"/C/Users/waste/Desktop/Prova 2 - Eduardo Gomes da Silva/Assets/Script/Player.cs",
@@ -77,7 +89,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"find_in_files":
 	{
@@ -91,6 +103,24 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"selectBox[1]SetActive(false);",
+			"selectBox[3].active = true;",
+			"selectBox[2].active = true;",
+			"selectBox[4].active = true;",
+			"canvasScreen[1].active = true;",
+			"canvasScreen[0].active = false;",
+			"canvasScreen[2].active = true;",
+			"selectBox[0].active = true;",
+			"canvasScreen[2].active = false;",
+			"canvasScreen[1].active = false;",
+			"canvasScreen[0].active = true;",
+			"selectBox[4].active = false;",
+			"selectBox[3].active = false;",
+			"selectBox[2].active = false;",
+			"selectBox[1].active = false;",
+			"selectBox[0].active = false;",
+			"toy",
+			"GetKeyDown"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -117,15 +147,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5582,
+						"buffer_size": 5403,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5528,
-								5495
+								275,
+								275
 							]
 						],
 						"settings":
@@ -146,7 +176,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 0.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -183,7 +213,7 @@
 	"project": "Project Hacking 99%.sublime-project",
 	"replace":
 	{
-		"height": 0.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":

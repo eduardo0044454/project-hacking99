@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using UnityEngine.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour
 {
@@ -8,11 +8,14 @@ public class menu : MonoBehaviour
     private int selectControllerCounter;
     private int backCounter;
     private int enterCounter;
+
+    private int testCounter;
+
     public GameObject[] selectBox;
     public GameObject[] canvasScreen;
 
     // Use this for initialization
-    void Start ()
+    void Start()
     {
         menuCounter = 1;
         selectControllerCounter = 1;
@@ -26,17 +29,37 @@ public class menu : MonoBehaviour
 
         canvasScreen[0].SetActive(true);
         canvasScreen[1].SetActive(false);
-        canvasScreen[1].SetActive(false);
-
-        Debug.Log("TETAAAAAAAAAAAAAAAAA");
+        canvasScreen[2].SetActive(false);
     }
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
+        //float xAxis = Input.GetAxis("D-Pad Horizontal");
+        //float yAxis = Input.GetAxis("D-Pad Vertical");
+
+        //if (xAxis >= .1f)
+        //{
+        //    Debug.Log("xTETAAAAAAAA");
+        //}
+
+        //if (xAxis <= -.1f)
+        //{
+        //    Debug.Log("Xtetaaaaaaaa");
+        //}
+
+        //if (yAxis >= -1f)
+        //{
+        //    Debug.Log("yTETAAAAAAAA");
+        //}
+
+        //if (yAxis <= -.1f)
+        //{
+        //    Debug.Log("Ytetaaaaaaaa");
+        //}
+
         if (canvasScreen[0].active)
         {
-            //TELA DE MENU PRINCIPAL
             if ((Input.GetKeyDown(KeyCode.DownArrow)) || (Input.GetKeyDown(KeyCode.S)))
             {
                 menuCounter++;
@@ -68,9 +91,7 @@ public class menu : MonoBehaviour
             {
                 menuCounter = 2;
             }
-            //TELA DE MENU PRINCIPAL
 
-            //SELEÇÃO DE OPÇÃO
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (menuCounter == 1)
@@ -93,7 +114,6 @@ public class menu : MonoBehaviour
                     selectBox[1].SetActive(false);
                 }
             }
-            //SELEÇÃO DE OPÇÃO
         }
 
         if (canvasScreen[1].active)
@@ -153,15 +173,13 @@ public class menu : MonoBehaviour
 
             if ((selectControllerCounter == 1) && (enterCounter == 2) && backCounter == 1)
             {
-                Application.LoadLevel(1);
-                //SceneManager.LoadLevel(1);
+                SceneManager.LoadScene ("Toy", LoadSceneMode.Single);
                 Debug.Log("teta");
             }
 
             if ((selectControllerCounter == 2) && (enterCounter == 2) && backCounter == 1)
             {
-                Application.LoadLevel(1);
-                //SceneManager.LoadLevel(1);
+                SceneManager.LoadScene ("Toy", LoadSceneMode.Single);
                 Debug.Log("TETA");
             }
 
@@ -200,5 +218,5 @@ public class menu : MonoBehaviour
                 Start();
             }
         }
-	}
+    }
 }
